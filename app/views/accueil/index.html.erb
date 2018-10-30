@@ -1,0 +1,13 @@
+<div id="gossip_container">
+<% @gossip_id = 1 %>
+<% @all_gossips.each do |gossip| %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-title"> <%= gossip[:content] %></p>
+    <h5 class="card-text"> <%= gossip[:author] %></h5>
+    <a href="/gossip/<%= @gossip_id %>" class="card-link">Card link</a>
+  </div>
+</div>
+<% @gossip_id += 1 %>
+<% end %>
+</div
