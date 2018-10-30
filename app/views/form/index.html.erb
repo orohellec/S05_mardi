@@ -1,0 +1,5 @@
+<%= form_for @gossip, url: {action: "create"} do |f| %>
+  Votre nom : <%= f.text_field :author %><br/><br/>
+  Votre potin : <br />  <%= f.text_area :content, size: "42x4.2" %><br/>
+  <%= f.submit "Envoyer" %><br/>
+<% end %>
